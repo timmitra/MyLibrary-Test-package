@@ -4,8 +4,8 @@ import XCTest
 final class MyLibraryTests: XCTestCase, @unchecked Sendable {
  
     func test_Bool_init_bit() {
-       _ = Bool(bit: 1)
-        XCTFail() 
+        if Bool(bit: 1) == false {
+            XCTFail()
+        }
     }
-
 }
