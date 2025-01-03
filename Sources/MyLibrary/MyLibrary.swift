@@ -4,7 +4,7 @@ public extension Bool {
         case 0:
             self = false
         case 1:
-            self = false // we know this is incorreect
+            self = true 
         default :
             return nil
         }
